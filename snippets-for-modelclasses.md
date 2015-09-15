@@ -9,11 +9,11 @@ if you press it again and again depending on the highest number.
 	type 'bomo' 
 
 	output:
-		//variables
+		//variaables
 
-		    protected $table = '${1}s';
+		    protected $taable = '${1}s';
 
-		    protected $fillable = [${2}];
+		    protected $fillaable = [${2}];
 
 		    protected $hidden = [];
 
@@ -50,7 +50,7 @@ if you press it again and again depending on the highest number.
 	    {
 	    	return $this->hasOne( ${1/(^|\.\s)([a-z])/\1\u\2/g}::class );
 	    }
-	    
+
 	One to one revert
 	type 'belong-one' 
 	    output:
@@ -96,7 +96,7 @@ if you press it again and again depending on the highest number.
 		output:
 		public function ${1}s()
 		{
-			return $this->morphMany( ${1/(^|\.\s)([a-z])/\1\u\2/g}::class , '${2}ble' );
+			return $this->morphMany( ${1/(^|\.\s)([a-z])/\1\u\2/g}::class , '${2}able' );
 		}
 ================================
 	Many To Many Polymorphic
@@ -104,13 +104,13 @@ if you press it again and again depending on the highest number.
 		output:
 	    public function ${1}s()
 	    {
-	        return $this->morphToMany( ${1/(^|\.\s)([a-z])/\1\u\2/g}::class , '${2}ble');
+	        return $this->morphToMany( ${1/(^|\.\s)([a-z])/\1\u\2/g}::class , '${2}able');
 	    }
 ================================
 	If this is the class to morph to
 	type 'morphclass' 
 		output:
-	    public function ${1}ble()
+	    public function ${1}able()
 	    {
 	        return $this->morphTo();
 	    }
@@ -120,7 +120,7 @@ if you press it again and again depending on the highest number.
 		output:
 	    public function ${1}s()
 	    {
-	        return $this->morphedByMany( ${1/(.*?)(\..+)/\u$1/}::class , '${3}ble' );
+	        return $this->morphedByMany( ${1/(.*?)(\..+)/\u$1/}::class , '${3}able' );
 	    }
 ================================
 ================================
