@@ -2,7 +2,7 @@
 	<content><![CDATA[
 public function ${1}s()
 {
-    return \$this->morphedByMany( ${1/(.*?)(\..+)/\u$1/}::class , '${3}ble' );
+    return \$this->morphedByMany( ${1/(^|\.\s)([a-z])/\1\u\2/g}::class , '${3}ble' );
 }
 
 ]]></content>
