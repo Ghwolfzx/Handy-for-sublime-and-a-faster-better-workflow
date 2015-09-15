@@ -1,0 +1,21 @@
+<snippet>
+	<content><![CDATA[
+public function up()
+{
+	Schema::create( '${1}' , function (Blueprint \$table)
+	{
+		\$table->increments('id');
+		\$table->${2};
+	});
+}
+
+public function down()
+{
+	Schema::drop( '${1}' );
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>scheme</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

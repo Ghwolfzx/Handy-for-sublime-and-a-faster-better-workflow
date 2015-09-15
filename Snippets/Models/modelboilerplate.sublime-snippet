@@ -1,0 +1,39 @@
+<snippet>
+	<content><![CDATA[
+//variables
+
+    protected \$table = '${1}s';
+
+    protected \$fillable = [${2}];
+
+    protected \$hidden = [];
+
+    protected $with = [${3}];
+
+// relations
+
+	// one ${1} on one
+
+	// one ${1} to many
+
+	// many ${1}s to one
+
+	// has many trough
+
+	// many ${1}s to many
+
+	// polymorphic
+
+	// many to many polymorphic 
+
+// functions
+
+// getters
+
+// setters
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	 <tabTrigger>bomo</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	 <scope>source.php</scope>
+</snippet>

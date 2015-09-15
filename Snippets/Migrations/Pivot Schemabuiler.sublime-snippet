@@ -1,0 +1,35 @@
+<snippet>
+	<content><![CDATA[
+
+public function up()
+    {
+        Schema::create( '${1}_${2}' , function (Blueprint \$table)
+        {
+            \$table->integer('${1}_id')->unsigned();
+            \$table->integer('${2}_id')->unsigned();
+
+            \$table->foreign('${1}_id')
+            ->references('id')
+            ->on('${1}s')
+            ->onDelete('cascade');
+
+            \$table->foreign('${2}_id')
+            ->references('id')
+            ->on('${2}s')
+            ->onDelete('cascade');
+
+            \$table->primary([ '${1}_id' , '${2}_id' ]);
+        });
+    }
+    
+    public function down()
+    {
+        Schema::drop( '${1}_${2}' );
+    }
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	 <tabTrigger>PiS</tabTrigger> 
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	 <scope>source.php</scope> 
+</snippet>
