@@ -61,7 +61,7 @@ Windows
 
 	advancedNewfile
 		[ctrl+alt+n]			new file
-		["shift+ctrl+alt+n"]
+		["shift+ctrl+alt+n"]	advanced new file
 
 	php companion:
 		[F9]					get classpath after clicking on classname
