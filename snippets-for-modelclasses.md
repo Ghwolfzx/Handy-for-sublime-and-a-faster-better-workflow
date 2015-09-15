@@ -44,7 +44,15 @@ if you press it again and again depending on the highest number.
 ================================
 ================================
 	One to one
-	type 'one-one' 
+	type 'has-one' 
+	    output:
+	    public function ${1}()
+	    {
+	    	return $this->hasOne( ${1/(^|\.\s)([a-z])/\1\u\2/g}::class );
+	    }
+	    
+	One to one revert
+	type 'belong-one' 
 	    output:
 	    public function ${1}()
 	    {
