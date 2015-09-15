@@ -48,7 +48,7 @@ if you press it again and again depending on the highest number.
 	    output:
 	    public function ${1}()
 	    {
-	    	return $this->belongsToOne( ${1}::class );
+	    	return $this->belongsToOne( ${1/(^|\.\s)([a-z])/\1\u\2/g}::class );
 	    }
 ================================
 	One to Many
@@ -56,7 +56,7 @@ if you press it again and again depending on the highest number.
 		output:
 		public function ${1}s()
 		{
-			return $this->hasMany( ${1}::class );
+			return $this->hasMany( ${1/(^|\.\s)([a-z])/\1\u\2/g}::class );
 		}
 ================================
 	Many to One
@@ -64,7 +64,7 @@ if you press it again and again depending on the highest number.
 		output:
 		public function ${1}()
 		{
-			return $this->belongsTo( ${1}::class );
+			return $this->belongsTo( ${1/(^|\.\s)([a-z])/\1\u\2/g}::class );
 		}
 ================================
 	Many Through
@@ -72,7 +72,7 @@ if you press it again and again depending on the highest number.
 		output:
 		public function ${1}()
 		{
-			return $this->hasManyThrough( ${1}::class , ${2}::class );
+			return $this->hasManyThrough( ${1/(^|\.\s)([a-z])/\1\u\2/g}::class , ${2}::class );
 		}
 ================================
 	Many to Many
@@ -80,7 +80,7 @@ if you press it again and again depending on the highest number.
 		output:
 		public function ${1}s()
 		{
-			return $this->belongsToMany( ${1}::class );
+			return $this->belongsToMany( ${1/(^|\.\s)([a-z])/\1\u\2/g}::class );
 		}
 ================================
 	Polymorphic
@@ -88,7 +88,7 @@ if you press it again and again depending on the highest number.
 		output:
 		public function ${1}s()
 		{
-			return $this->morphMany( ${1}::class , '${2}ble' );
+			return $this->morphMany( ${1/(^|\.\s)([a-z])/\1\u\2/g}::class , '${2}ble' );
 		}
 ================================
 	Many To Many Polymorphic
@@ -96,7 +96,7 @@ if you press it again and again depending on the highest number.
 		output:
 	    public function ${1}s()
 	    {
-	        return $this->morphToMany( ${1}::class , '${2}ble');
+	        return $this->morphToMany( ${1/(^|\.\s)([a-z])/\1\u\2/g}::class , '${2}ble');
 	    }
 ================================
 	If this is the class to morph to
