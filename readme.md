@@ -5,13 +5,14 @@ After watching some tutorials from Laracasts I added a lot of snippets and packa
 
 ## Installation
 - Origami : Out of the box, Sublime Text offers a handful of "split modes." However, if you want more control, then the Origami package is right up your alley.
+====================================================================================================
 	I've added these keybindings to my user settings:
-	{ "keys": ["ctrl+c+up"], "command": "create_pane", "args": {"direction": "up"} },
-	{ "keys": ["ctrl+c+right"], "command": "create_pane", "args": {"direction": "right"} },
-	{ "keys": ["ctrl+c+down"], "command": "create_pane", "args": {"direction": "down"} },
-	{ "keys": ["ctrl+c+left"], "command": "create_pane", "args": {"direction": "left"} },
+		{ "keys": ["ctrl+c+up"], "command": "create_pane", "args": {"direction": "up"} },
+		{ "keys": ["ctrl+c+right"], "command": "create_pane", "args": {"direction": "right"} },
+		{ "keys": ["ctrl+c+down"], "command": "create_pane", "args": {"direction": "down"} },
+		{ "keys": ["ctrl+c+left"], "command": "create_pane", "args": {"direction": "left"} },
 
-	{ "keys": ["ctrl+c+d"], "command": "destroy_pane", "args": {"direction": "self"} },
+		{ "keys": ["ctrl+c+d"], "command": "destroy_pane", "args": {"direction": "self"} },
 ====================================================================================================
 - advancedNewfile : Finding a folder and left/right clicking takes time, use the shortcut instead.
 ====================================================================================================
