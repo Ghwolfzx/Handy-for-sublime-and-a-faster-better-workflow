@@ -4,7 +4,8 @@ After watching some tutorials from Laracasts I added a lot of snippets and packa
 
 
 ## Sublime Packages
-- origami
+- Origami
+
 Out of the box, Sublime Text offers a handful of "split modes." However, if you want more control, then the Origami package is right up your alley.
 
 
@@ -29,7 +30,6 @@ Origami
 	["ctrl+c+d"] remove this splits and merge with other panel
 
 ## snippets
-
-	## [Model snippets](http://themeforest.net/item/canvas-the-multipurpose-html5-template/9228123)
-	## [Migration snippets](http://themeforest.net/item/canvas-the-multipurpose-html5-template/9228123)
-	## [Route snippets](http://themeforest.net/item/canvas-the-multipurpose-html5-template/9228123)
+	[Migration snippets](https://github.com/jonasvanderhaegen/Handy-for-sublime-and-a-faster-better-workflow/blob/master/snippets-for-migrations.md)
+	[Model snippets](https://github.com/jonasvanderhaegen/Handy-for-sublime-and-a-faster-better-workflow/blob/master/snippets-for-modelclasses.md)
+	[Route snippets](https://github.com/jonasvanderhaegen/Handy-for-sublime-and-a-faster-better-workflow/blob/master/snippets-for-routes.md)
