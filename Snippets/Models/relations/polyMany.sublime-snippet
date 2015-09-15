@@ -2,7 +2,7 @@
 	<content><![CDATA[
 public function ${1}s()
 {
-    return \$this->morphToMany( ${1}::class , '${2}ble');
+    return \$this->morphToMany( ${1/(^|\.\s)([a-z])/\1\u\2/g}::class , '${2}ble');
 }
 
 ]]></content>

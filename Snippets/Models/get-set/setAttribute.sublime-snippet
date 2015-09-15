@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
 
-	    public function set${1/(.*?)(\..+)/\u$1/}Attribute(${2})
+	    public function set${1/(^|\.\s)([a-z])/\1\u\2/g}Attribute(${2})
 	    {
 	        return \$this->attributes['${1}'] = ${3};
 	    }

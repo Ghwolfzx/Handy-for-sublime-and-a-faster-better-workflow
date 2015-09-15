@@ -2,7 +2,7 @@
 	<content><![CDATA[
 public function ${1}s()
 {
-	return \$this->hasMany( ${1}::class );
+	return \$this->hasMany( ${1/(^|\.\s)([a-z])/\1\u\2/g}::class );
 }
 
 ]]></content>

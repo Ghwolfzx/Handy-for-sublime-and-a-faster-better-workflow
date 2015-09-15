@@ -2,7 +2,7 @@
 	<content><![CDATA[
 public function ${1}()
 {
-	return \$this->hasManyThrough( ${1}::class , ${2}::class );
+	return \$this->hasManyThrough( ${1/(^|\.\s)([a-z])/\1\u\2/g}::class , ${2}::class );
 }
 
 ]]></content>
