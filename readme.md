@@ -17,6 +17,7 @@ After watching some tutorials from Laracasts I added a lot of snippets and packa
 ```
 
 - advancedNewfile : Finding a folder and left/right clicking takes time, use the shortcut instead.
+
 - laravel5Artisan : using artisan commands in sublime instead of opening a command prompt.
 - phpCompanion : very useful 
 
@@ -52,10 +53,15 @@ in your user settings:
 
 ## Shortcuts
 Windows
+```js
 	Sublime
 		["shift+ctrl+p"] 		Command palette
 		["ctrl+p"] 				go to file
 		["ctrl+p"] 				go to file + @ + find and jump to this
+
+	advancedNewfile
+		[ctrl+alt+n]			new file
+		["shift+ctrl+alt+n"]
 
 	php companion:
 		[F9]					get classpath after clicking on classname
@@ -63,12 +69,13 @@ Windows
 		[F7]					generates a constructor on the fly
 
 	Origami
-		["ctrl+c+up"] 		splits horizontal up
-		["ctrl+c+right"] 	splits vertical to right
-		["ctrl+c+down"]		splits horizontal down
-		["ctrl+c+left"]		splits vertical to right
+		["ctrl+c+up"] 			splits horizontal up
+		["ctrl+c+right"] 		splits vertical to right
+		["ctrl+c+down"]			splits horizontal down
+		["ctrl+c+left"]			splits vertical to left
 
 		["ctrl+c+d"] remove this splits and merge with other panel
+```
 
 ## snippets
 -[Migration snippets](https://github.com/jonasvanderhaegen/Handy-for-sublime-and-a-faster-better-workflow/blob/master/snippets-for-migrations.md)
