@@ -9,11 +9,11 @@ if you press it again and again depending on the highest number.
 	type 'bomo' 
 
 	output:
-		//variaables
+		//variables
 
-		    protected $taable = '${1}s';
+		    protected $table = '${1}s';
 
-		    protected $fillaable = [${2}];
+		    protected $fillable = [${2}];
 
 		    protected $hidden = [];
 
